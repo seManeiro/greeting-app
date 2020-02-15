@@ -1,20 +1,24 @@
 # Telenor Greeting Test application:
 
-### To build this application you will need to have installed localy:
+### Download the source code and cd into the project directory from your command line.
+
+## Build application with Docker
+
+- *docker-compose build*
+- *docker-compose up -d*
+
+## Build this application localy:
 
 - *Java java 11.0.6 or later*
 
 - *Apache Maven 3.3.9 or later*
 
 
-### Download the source code and cd into the project directory from your command line,
-
 ### run this commands:
 
 - *mvn compile*
 
 ### This is just to verify everything is compiling correctly in your env.
-
 
 - *mvn package*
 
