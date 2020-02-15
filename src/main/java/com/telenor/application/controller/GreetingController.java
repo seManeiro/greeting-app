@@ -28,13 +28,14 @@ public class GreetingController {
 	@ResponseStatus(HttpStatus.OK)
 	@ApiResponses(value = {
 
-			@ApiResponse(code = 200, message = "OK"), @ApiResponse(code = 400, message = "Bad Request"),
+			@ApiResponse(code = 200, message = "OK"), 
+			@ApiResponse(code = 400, message = "Bad Request"),
 			@ApiResponse(code = 500, message = "Internal Server Error") })
 
 	@RequestMapping(value = "/greeting/{account}/", method = RequestMethod.GET)
 	public final ResponseEntity<?> greeting(
 			@ApiParam(value = "{ \"id\": 18}", example = "{\"id\": 18}") @RequestBody final String input,
-			@ApiParam(allowableValues = "personal,business", defaultValue = "personal", required = true) @PathVariable final String account ) {
+			@ApiParam(allowableValues = "personal,business", defaultValue = "personal", required = true) @PathVariable final String account) {
 
 		try {
 
@@ -45,7 +46,7 @@ public class GreetingController {
 		} catch (GreetingValidationException e) {
 
 			return new ResponseEntity<>(e.getErrorMessage(), HttpStatus.BAD_REQUEST);
-			
+
 		} catch (Exception e) {
 
 			return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
