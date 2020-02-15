@@ -24,7 +24,7 @@
 
 ### From the same directory you are standing run now this command:
 
-*- java -jar target/telenor-application-0.0.1-SNAPSHOT.jar*
+- *java -jar target/telenor-application-0.0.1-SNAPSHOT.jar*
 
 ## The application should be up and running
 
