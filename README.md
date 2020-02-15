@@ -5,6 +5,7 @@
 ## Build application with Docker
 
 - *docker-compose build*
+
 - *docker-compose up -d*
 
 ## Build this application localy:
