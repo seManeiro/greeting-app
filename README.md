@@ -52,6 +52,6 @@
 
 
 
-### You can also access Swagger to run  test request using Swagger:
+### You can also access Swagger to run test:
 
 *http://localhost:5000/swagger-ui.html#*
