@@ -1,4 +1,4 @@
-# Telenor Greeting Test application:
+# Greeting Test application:
 
 ### Download the source code and cd into the project directory from your command line.
 
